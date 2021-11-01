@@ -1,0 +1,296 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: 'Libre Baskerville', serif;
+  background-color: #333;
+  color: #fff;
+  right: 0;
+  transition: right ease-in-out .5s;
+}
+
+body.open {
+  position: relative;
+  right: 345px;
+}
+
+a {
+  color: #fff;
+}
+
+a:hover {
+  color: #c39b00;
+  text-decoration: none;
+}
+
+a:visited,
+a:focus {
+  text-decoration: none;
+/*  color: #866b01;*/
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-60 {
+  margin-top: 60px;
+}
+
+@media ( min-width: 736px) {
+  .h33 {
+    height: 33.33%;
+  }
+  .h90 {
+    height: 90%;
+  }
+}
+
+.h10 {
+  height: 10%;
+}
+
+.margin-0 {
+  margin: 0;
+}
+
+.padd-0 {
+  padding: 0;
+}
+
+.padd-10 {
+  padding: 10px;
+}
+
+.padd-5 {
+  padding: 5px;
+}
+
+.img-transparent {
+  /*opacity: 0.7;*/
+}
+
+.layer {
+  background-color: #333;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+/* Menu Button */
+
+.menu-trigger {
+  width: 0;
+  height: 0;
+  border-top: 150px solid #333;
+  border-left: 150px solid transparent;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  transition: right ease-in .5s;
+}
+
+.main-menu-trigger {
+  position: fixed;
+  top: 15px;
+  right: 10px;
+  transition: right ease-in .5s;
+  z-index: 4;
+}
+
+.open .main-menu-trigger,
+.open .menu-trigger {
+  right: 350px;
+}
+
+.hamburger-inner,
+.hamburger-inner:before,
+.hamburger-inner:after {
+  background-color: #fff;
+}
+
+
+/* LOGO
+-----------*/
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  font-size: 40px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.logo a {
+  color: #fff;
+  text-shadow: 2px 2px 3px #484848;
+}
+
+.caption {
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  padding: 10px 20px;
+  transform: translate(-50%, -50%);
+  background-color: rgba(51, 51, 51, .7);
+  transition: left ease-in-out 0.3s;
+}
+
+.caption a {
+  color: #eee;
+}
+
+.caption a h3 {
+  margin: 0;
+}
+
+img.img-hover {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  opacity: 0.5;
+  transition: left ease-in-out .5s;
+}
+
+
+/* MENU */
+
+
+/* CONSTRUCTION */
+#constructions {
+  
+}
+
+
+
+/* COnstructio Slider */
+
+div#const-slider {
+  margin: 100px;
+  margin-left: 160px;
+}
+
+.navigasi-slider {
+  margin-top: 15px;
+}
+.carousel-control {
+    position: relative;
+    display: inline-block;
+    width: 30px;
+}
+
+/* ARCHITECTURE SECTION */
+
+.layer:hover .caption {
+  left: 50%;
+}
+
+.layer:hover .img-hover {
+  left: 0;
+  opacity: 1;
+}
+
+
+/* AVAILABILITY SECTION */
+
+.availability-caption {
+  position: absolute;
+  top: 0;
+  top: -120%;
+  /* width: 100%; */
+  transition: top ease-in-out .5s;
+}
+
+.availability-caption h3 {
+  margin-left: 45px;
+  margin-top: 10px;
+}
+
+.availability-caption h4 {
+  color: #d4810b;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.availability-caption p {
+  font-size: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.available-more {
+  font-size: 12px;
+  color: #fff;
+  margin-left: 45px;
+}
+
+.availability:hover .availability-caption {
+  top: 0;
+}
+
+.availability:hover .img-transparent {
+  opacity: 0.3;
+}
+
+
+/* CONTACT SECTION */
+
+.contact-caption {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  background-color: rgba(51, 51, 51, 0.9);
+  padding: 10px 15px;
+  transition: top ease-in-out .5s;
+}
+
+.layer:hover .contact-caption {
+  top: 0;
+}
+
+
+/* FOOTER SECTION */
+
+footer {
+  padding: 25px 10px;
+  /*background-color: #222;*/
+  color: #aaa;
+}
+
+@media ( max-width: 768px) {
+  .md-h100 {
+    height: 100%;
+  }
+  .caption {
+    left: 50%!important;
+  }
+}
+
